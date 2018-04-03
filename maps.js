@@ -110,7 +110,7 @@ function initMap() {
   var m86 = createMarker({lat: 29.6519396, lng: -82.3249961}, 'SwampHacks');
   var m87 = createMarker({lat: 43.653963, lng: -79.387207}, 'U of T Hacks');
   var m88 = createMarker({lat: 45.4972159, lng: -73.6103642}, 'Hackatown 2018');
-  var m89 = createMarker({lat: 53.1103334, lng: -105.6567239}, 'HackDavis');
+  var m89 = createMarker({lat: 38.5449, lng: -121.7405}, 'HackDavis');
   var m90 = createMarker({lat: 41.1536674, lng: -81.357886}, 'Fashion / Tech Hackathon');
   var m91 = createMarker({lat: 38.8949549, lng: -77.0366456}, 'Hoya Hacks');
   var m92 = createMarker({lat: 42.3604823, lng: -71.0595678}, 'SheHacks');
