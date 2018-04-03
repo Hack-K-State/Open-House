@@ -154,7 +154,7 @@ function initMap() {
   var m130 = createMarker({lat: 39.1014537, lng: -84.5124602}, 'RevolutionUC');
   var m131 = createMarker({lat: 43.466874, lng: -80.524635}, 'StarterHacks');
   var m132 = createMarker({lat: 38.8147596, lng: -77.0902476527}, 'HackTJ');
-  var m133 = createMarker({lat: 46.8443248, lng: -71.2743272}, 'SF Hacks');
+  var m133 = createMarker({lat: 37.7765, lng: -122.4507}, 'SF Hacks');
   var m134 = createMarker({lat: 33.7490987, lng: -84.3901849}, 'HackGSU');
   var m135 = createMarker({lat: 42.0267703, lng: -93.6170554}, 'HackISU');
   var m136 = createMarker({lat: 40.6501038, lng: -73.9495823}, 'HackNYU');
