@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+  <meta name="description" content="Hack K-State | Engineer Your Own Adventure">
+  <title>Hack K-State | Engineer Your Own Adventure</title>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 information">
+        <h1>Hack K-State</h1>
+        <p class="lite">Engineer Your Own Adventure</p>
+        <p><i>Hackathons</i> are weekend long invention competitions. Students show up on a Friday or Saturday, dream up a crazy idea like a website, mobile app, or a robot, and then bring it to life over the course of the weekend, and share it with their peers.</p>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#stats">View the Stats</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#map">Plan your next Visit!</button>
+      </div>
+      <div class="col-md-9" id="video-player"></div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="stats" tabindex="-1" role="dialog" aria-labelledby="statsLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="statsLabel">Hackathon Statistics</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="map" tabindex="-1" role="dialog" aria-labelledby="mapLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="mapLabel">North America Hackathons</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <iframe src="https://snazzymaps.com/embed/61513" width="100%" height="100%" style="border:none;"></iframe>
+    </div>
+  </div>
+</div>
+</div>
+
+  <div class="player" data-property="{videoURL:'https://youtu.be/QC10NjclAaw',containment:'#video-player', autoPlay:true, loop:true, mute:true, showControls:false, opacity:0.6, optimizeDisplay:true}"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="jquery.mb.YTPlayer.min.js"></script>
+  <script>
+  var myPlayer;
+  jQuery(function () {
+    myPlayer = jQuery(".player").YTPlayer();
+  });
+</script>
+</body>
+</html>
