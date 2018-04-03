@@ -12,50 +12,102 @@
 <body>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-3 information">
+      <div class="col-lg-3 information">
         <h1>Hack K-State</h1>
         <p class="lite">Engineer Your Own Adventure</p>
         <p><i>Hackathons</i> are weekend long invention competitions. Students show up on a Friday or Saturday, dream up a crazy idea like a website, mobile app, or a robot, and then bring it to life over the course of the weekend, and share it with their peers.</p>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#stats">View the Stats</button>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#map">Plan your next Visit!</button>
+        <p>With over 238 hackathons to choose from, start your adventure today!</p>
+        <div class="buttons">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#stats">View the Stats</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mlh">About MLH</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#map">Begin your Adventure!</button>
+        </div>
       </div>
-      <div class="col-md-9" id="video-player"></div>
+      <div class="col-lg-9" id="video-player"></div>
     </div>
   </div>
 
   <div class="modal fade" id="stats" tabindex="-1" role="dialog" aria-labelledby="statsLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="statsLabel">Hackathon Statistics</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="statsLabel">2016-17 Hackathon Statistics</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">238</h5>
+                  <p class="card-text">Hackathons</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">2,000</h5>
+                  <p class="card-text">Student Organizers</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">65,000</h5>
+                  <p class="card-text">Hackers</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h5>Learning, Networking, & Fun</h5>
+          <ul>
+            <li><i>88%</i> of students agree: <q>I am gaining skills at hackathons that I am <strong>not</strong> getting in the classroom.</q></li>
+            <li><i>41%</i> of MLH hackers got a job from the skills they learned.</li>
+            <li><i>33%</i> of hackers got a job at a company they met at an MLH hackathon.</li>
+          </ul>
+          <span class="small text-muted sources">Sources: <a href="https://s3.us-east-2.amazonaws.com/hackcon.mlh.io/talks/swift-state-of-the-league.pdf" target="_blank">MLH State of the League</a></span>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="modal fade" id="map" tabindex="-1" role="dialog" aria-labelledby="mapLabel" aria-hidden="true">
-<div class="modal-dialog modal-lg" role="document">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h5 class="modal-title" id="mapLabel">North America Hackathons</h5>
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-    <div class="modal-body">
-      <iframe src="https://snazzymaps.com/embed/61513" width="100%" height="100%" style="border:none;"></iframe>
+  <div class="modal fade" id="mlh" tabindex="-1" role="dialog" aria-labelledby="mlhLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="mlhLabel">Major League Hacking</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+        </div>
+      </div>
     </div>
   </div>
-</div>
-</div>
 
-  <div class="player" data-property="{videoURL:'https://youtu.be/QC10NjclAaw',containment:'#video-player', autoPlay:true, loop:true, mute:true, showControls:false, opacity:0.6, optimizeDisplay:true}"></div>
+  <div class="modal fade" id="map" tabindex="-1" role="dialog" aria-labelledby="mapLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="mapLabel">North America Hackathons</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <iframe src="https://snazzymaps.com/embed/61513" width="100%" height="100%" style="border:none; border-radius: 0 0 4px 4px;"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="player" data-property="{videoURL:'https://youtu.be/QC10NjclAaw',containment:'#video-player', autoPlay:true, loop:true, mute:true, showControls:false, opacity:0.6, optimizeDisplay:true, useOnMobile:false}"></div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
